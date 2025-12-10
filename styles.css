@@ -1,0 +1,291 @@
+/* Top Esport Chart - Main Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #112327;
+  color: #e0ffff;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(180deg, #3db8b8 0%, #2a8a8a 100%);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #112327;
+}
+
+/* Navigation */
+.nav {
+  background-color: #112327;
+  padding: 1.5rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(240,240,240,0.9) 100%);
+  color: #1a2a2a;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+}
+
+.nav-btn.active {
+  background: linear-gradient(180deg, #00ffff 0%, #00cccc 100%);
+  color: #112327;
+}
+
+/* Main Content */
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #5fd4d4;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid-3 {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Cards */
+.card {
+  background-color: #1d2f31;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  line-height: 1.7;
+  color: #e0ffff;
+}
+
+/* Milestone Cards */
+.milestone {
+  background-color: #1d2f31;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.milestone-title {
+  font-weight: 600;
+  color: #5fd4d4;
+  margin-bottom: 0.5rem;
+}
+
+.milestone p {
+  font-size: 0.9rem;
+  color: #e0ffff;
+}
+
+/* Tables */
+.table-container {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.data-table thead {
+  background: linear-gradient(180deg, #254554 0%, #1d3a3f 100%);
+}
+
+.data-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #7dd4d4;
+}
+
+.data-table td {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: #1a2a2a;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.data-table tbody tr:nth-child(odd) {
+  background-color: #e8f4f8;
+}
+
+.data-table .font-medium {
+  font-weight: 500;
+}
+
+.data-table .total-row td {
+  background-color: #1d2f31;
+  color: #e0ffff;
+  font-weight: 600;
+}
+
+/* Stats Card */
+.stats-card {
+  background-color: #1d2f31;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stats-label {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #5fd4d4;
+  margin-bottom: 1rem;
+}
+
+.stat-item {
+  margin-bottom: 1rem;
+}
+
+.stat-item p {
+  color: #a0c8c8;
+  font-size: 0.9rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00ffff;
+}
+
+/* Achievement List */
+.achievement-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.achievement-list li {
+  font-size: 0.9rem;
+  color: #e0ffff;
+  margin-bottom: 0.5rem;
+}
+
+/* Upcoming Events */
+.event-item {
+  border-bottom: 1px solid #254554;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.event-name {
+  font-weight: 500;
+  color: #e0ffff;
+}
+
+.event-details {
+  font-size: 0.875rem;
+  color: #00ffff;
+}
+
+.event-date {
+  font-size: 0.75rem;
+  color: #a0c8c8;
+}
+
+/* Footer */
+.footer {
+  background-color: #1d2f31;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer p {
+  color: #a0c8c8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.75rem;
+  }
+  
+  .nav-btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+}
