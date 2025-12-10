@@ -1,4 +1,4 @@
-/* Top Esport Chart - Main Stylesheet */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
+
 .header {
   background: linear-gradient(180deg, #3db8b8 0%, #2a8a8a 100%);
   padding: 1.5rem;
@@ -29,7 +29,7 @@ body {
   color: #112327;
 }
 
-/* Navigation */
+
 .nav {
   background-color: #112327;
   padding: 1.5rem;
@@ -65,14 +65,14 @@ body {
   color: #112327;
 }
 
-/* Main Content */
+
 .main {
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* Section Title */
+
 .section-title {
   font-size: 1.25rem;
   font-weight: 600;
@@ -80,7 +80,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Grid Layout */
+
 .grid {
   display: grid;
   gap: 2rem;
@@ -104,7 +104,7 @@ body {
   }
 }
 
-/* Cards */
+
 .card {
   background-color: #1d2f31;
   border-radius: 0.75rem;
@@ -123,7 +123,7 @@ body {
   color: #e0ffff;
 }
 
-/* Milestone Cards */
+
 .milestone {
   background-color: #1d2f31;
   border-radius: 0.75rem;
@@ -142,7 +142,6 @@ body {
   color: #e0ffff;
 }
 
-/* Tables */
 .table-container {
   overflow-x: auto;
 }
@@ -191,76 +190,8 @@ body {
   font-weight: 600;
 }
 
-/* Stats Card */
-.stats-card {
-  background-color: #1d2f31;
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  text-align: center;
-}
 
-.stats-label {
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #5fd4d4;
-  margin-bottom: 1rem;
-}
 
-.stat-item {
-  margin-bottom: 1rem;
-}
-
-.stat-item p {
-  color: #a0c8c8;
-  font-size: 0.9rem;
-}
-
-.stat-value {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #00ffff;
-}
-
-/* Achievement List */
-.achievement-list {
-  list-style: none;
-  margin-top: 1rem;
-}
-
-.achievement-list li {
-  font-size: 0.9rem;
-  color: #e0ffff;
-  margin-bottom: 0.5rem;
-}
-
-/* Upcoming Events */
-.event-item {
-  border-bottom: 1px solid #254554;
-  padding-bottom: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.event-item:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-}
-
-.event-name {
-  font-weight: 500;
-  color: #e0ffff;
-}
-
-.event-details {
-  font-size: 0.875rem;
-  color: #00ffff;
-}
-
-.event-date {
-  font-size: 0.75rem;
-  color: #a0c8c8;
-}
-
-/* Footer */
 .footer {
   background-color: #1d2f31;
   padding: 1.5rem;
@@ -272,7 +203,7 @@ body {
   color: #a0c8c8;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .header h1 {
     font-size: 1.75rem;
